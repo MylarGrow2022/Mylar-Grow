@@ -3,117 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mylar Grow - Revolutionizing Farming</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #4caf50, #8bc34a);
-            color: white;
-            padding: 1rem 2rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            text-align: center;
-            background: #4caf50;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 2rem;
-            text-align: center;
-        }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .feature {
-            flex: 1 1 300px;
-            margin: 1rem;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-        footer a {
-            color: #8bc34a;
-            text-decoration: none;
-        }
-    </style>
+    <title>Mylar Grow</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
 <body>
     <header>
-        <h1>Welcome to Mylar Grow</h1>
-        <p>Revolutionizing farming with innovative layered solutions</p>
+        <nav>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#achievements">Our Past Achievements</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <main>
+        <section id="about-mylar-grow">
+            <h1>About Mylar Grow</h1>
+            <p>Discover our innovative approach to sustainable farming.</p>
+        </section>
 
-    <section id="about">
-        <h2>About Mylar Grow</h2>
-        <p>Mylar Grow is transforming agriculture with cutting-edge technology that optimizes sunlight usage through reflective Mylar surfaces and automated adjustments. Our mission is to enhance productivity and sustainability in farming.</p>
-    </section>
+        <section id="innovative-farming">
+            <h2>Innovative Farming</h2>
+            <p>Our Two-Step Layered Farming system utilizes Mylar foil to reflect sunlight, effectively doubling crop yield while conserving land. This method promotes sustainability and enhances agricultural productivity.</p>
+        </section>
 
-    <section id="features">
-        <h2>Our Features</h2>
-        <div class="features">
-            <div class="feature">
-                <h3>Layered Farming</h3>
-                <p>Maximizing land efficiency by utilizing multiple layers of crops.</p>
-            </div>
-            <div class="feature">
-                <h3>Mylar Technology</h3>
-                <p>Reflects 98% of sunlight, ensuring maximum light usage for all layers.</p>
-            </div>
-            <div class="feature">
-                <h3>Sunlight Tracking</h3>
-                <p>Automated systems adjust Mylar surfaces to follow the sun for optimal reflection.</p>
-            </div>
-            <div class="feature">
-                <h3>Sustainability</h3>
-                <p>Reducing resource wastage and improving crop yield through smart solutions.</p>
-            </div>
-        </div>
-    </section>
+        <section id="meet-our-team">
+            <h2>Meet Our Team</h2>
+            <p>Our co-founders, Alice Johnson and Mark Thompson, bring extensive experience in agricultural technology and engineering, dedicated to transforming farming practices for a sustainable future.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you! Reach out to us for more information.</p>
-        <p>Email: <a href="mailto:info@mylargrow.com">info@mylargrow.com</a></p>
-        <p>Phone: +1 (234) 567-890</p>
-    </section>
+        <section id="our-mission">
+            <h2>Our Mission</h2>
+            <p>We aim to revolutionize agriculture by promoting sustainability and efficiency through innovative farming solutions that benefit both the environment and local communities.</p>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Mylar Grow. All rights reserved. | <a href="#">Privacy Policy</a></p>
+        <nav>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#achievements">Our Past Achievements</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="connect">
+            <h3>Connect</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </section>
+
+        <section id="newsletter">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to our newsletter for the latest updates on sustainable farming innovations.</p>
+            <form action="#" method="post">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <p>&copy; 2025 Mylar Grow. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
