@@ -9,7 +9,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e7f9f9;
+            background-color: #C1FAF4;
             color: #333;
         }
 
@@ -18,7 +18,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 40px;
-            background-color: #fff;
+            background-color: #C1FAF4;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -45,9 +45,11 @@
             align-items: center;
             justify-content: space-between;
             padding: 5px;
-            height: 120vh;
+            height: auto;
             box-sizing: border-box;
-            background-color: #e7f9f9;
+            background-color: #C1FAF4;
+            flex-wrap: wrap;
+            gap: 20px;
         }
 
         .hero .hero-text {
@@ -55,7 +57,7 @@
         }
 
         .hero h1 {
-            font-size: 3em;
+            font-size: 2.5em;
             margin-bottom: 20px;
             color: #4CAF50;
         }
@@ -64,6 +66,7 @@
             font-size: 1.2em;
             line-height: 1.6;
             color: #555;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         .hero img {
@@ -93,11 +96,14 @@
         a:hover {
             text-decoration: underline;
         }
+
         .content {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
+            justify-content: center;
         }
+
         .card {
             background: white;
             border-radius: 10px;
@@ -107,24 +113,80 @@
             width: calc(33.333% - 20px);
             box-sizing: border-box;
         }
+
         .card:hover {
             transform: translateY(-10px);
         }
+
         .card img {
             max-width: 100%;
             height: auto;
             display: block;
         }
+
         .card h3 {
             margin: 15px;
             font-size: 1.5em;
             color: #4CAF50;
         }
+
         .card p {
             margin: 0 15px 15px;
             font-size: 1em;
             line-height: 1.5;
             color: #666;
+        }
+
+        @media (max-width: 1200px) {
+            .hero .hero-text {
+                max-width: 60%;
+            }
+
+            .hero img {
+                max-width: 35%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 10px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero .hero-text {
+                max-width: 100%;
+            }
+
+            .hero img {
+                max-width: 70%;
+            }
+
+            .content .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .content .card {
+                width: 100%;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -134,7 +196,6 @@
 <header>
     <h1>Mylar Grow</h1>
     <nav>
-
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="experiences.html">Our Experiences</a>
@@ -150,32 +211,30 @@
     </div>
     <img src="mylar.png" alt="Farming System">
 </section>
+
 <section id="features">
-    <h1>Features</h1>
+    <h1>Features:</h1>
     <div class="content">
         <div class="card">
-            
             <h3>Space Optimization</h3>
-            <p>Mylar Grow uses two floors(ground and top) for growing crops and maximize the efficiency</p>
+            <p>Mylar Grow uses two floors (ground and top) for growing crops and maximizes efficiency.</p>
         </div>
         <div class="card">
-           
             <h3>Light Reflection</h3>
-            <p>Mylar Grow uses Mylar which reflects 98% of light reflection to the plants and does not use artifical lighting for energy conservation</p>
+            <p>Mylar Grow uses Mylar which reflects 98% of light to plants and avoids artificial lighting for energy conservation.</p>
         </div>
         <div class="card">
-          
             <h3>Sustainability</h3>
-            <p>Mylar Grow uses wind-energy and solar energy to power the whole product for maximum yield sustainably.</p>
+            <p>Mylar Grow uses wind and solar energy to power the entire system for sustainable maximum yield.</p>
         </div>
     </div>
 </section>
+
 <section class="hero">
     <img src="mgraphics.png" alt="Farming System">
     <div class="hero-text">
-        
         <h1>Our Vision</h1>
-        <p>At Mylar Grow, we envision a futuere where sustainable farming practices are the norm. Our Two-Step Layered Farming system not only addresses food security but also supports farmers and promotes eco-friendly agriculture. By harnessing natural sunlight and incorporating renewable energy sources, we aim to revolutionalize the agriculture industry.</p>
+        <p>At Mylar Grow, we envision a future where sustainable farming practices are the norm. Our Two-Step Layered Farming system not only addresses food security but also supports farmers and promotes eco-friendly agriculture. By harnessing natural sunlight and incorporating renewable energy sources, we aim to revolutionize the agriculture industry.</p>
     </div>
 </section>
 
