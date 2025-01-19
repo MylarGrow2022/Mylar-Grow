@@ -9,7 +9,7 @@
             font-family: 'Poppins', sans-serif, Arial;
             margin: 0;
             padding: 0;
-            background-color: #e7f9f9;
+            background-color: #C1FAF4;
             color: #333;
         }
 
@@ -17,8 +17,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 40px;
-            background-color: #fff;
+            padding: 15px 20px;
+            background-color: #C1FAF4;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -40,34 +40,47 @@
             color: #4CAF50;
         }
 
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
         .hero {
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            padding: 5px;
-            height: 100vh;
+            padding: 20px;
+            height: auto;
             box-sizing: border-box;
-            background-color: #e7f9f9;
+            background-color: #C1FAF4;
         }
 
         .hero .hero-text {
-            max-width: 50%;
+            flex: 1;
+            max-width: 100%;
+            margin: 10px 0;
         }
 
         .hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 2.5em;
+            margin-bottom: 10px;
             color: #4CAF50;
+            padding-left: 10%;
         }
 
         .hero p {
             font-size: 1.2em;
             line-height: 1.6;
             color: #555;
+            padding-left: 10%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         .hero img {
-            max-width: 45%;
+            flex: 1;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -93,11 +106,13 @@
         a:hover {
             text-decoration: underline;
         }
+
         .content {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
         }
+
         .card {
             background: white;
             border-radius: 10px;
@@ -107,70 +122,146 @@
             width: calc(33.333% - 20px);
             box-sizing: border-box;
         }
+
         .card:hover {
             transform: translateY(-10px);
         }
+
         .card img {
             max-width: 100%;
             height: auto;
             display: block;
         }
+
         .card h3 {
             margin: 15px;
             font-size: 1.5em;
             color: #4CAF50;
         }
+
         .card p {
             margin: 0 15px 15px;
             font-size: 1em;
             line-height: 1.5;
             color: #666;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
-    
+
         .team-section {
             text-align: center;
             max-width: 1200px;
             margin: 0 auto;
         }
+
         .team-section h1 {
             font-size: 2.5rem;
             color: #a52121;
         }
+
         .team-section p {
             font-size: 1.2rem;
             line-height: 1.6;
             margin-bottom: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
+
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
         }
+
         .team-member {
-            background-color: #ffffff;
+            background-color: #f9aae0;
             border-radius: 8px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
         }
+
         .team-member h2 {
             font-size: 1.1rem;
             color: #a52121;
             margin: 0;
         }
+
         .team-member h3 {
             font-size: 1.2rem;
             color: #555;
             margin: 10px 0;
         }
+
         .team-member p {
             font-size: 1rem;
             line-height: 1.6;
-            color: #666;
+            color: #4f4e4e;
         }
+
         .emoji {
             font-size: 1.5rem;
             margin-right: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .hero {
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+
+            .hero img {
+                margin: 20px 0;
+                max-width: 80%;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+                padding-left: 0;
+            }
+
+            .hero p {
+                padding-left: 0;
+                font-size: 1.1em;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                margin: 20px 0;
+                max-width: 100%;
+            }
+
+            .card {
+                width: 100%;
+            }
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -191,39 +282,37 @@
     <img src="tractor.png" alt="Farming System">
     <div class="hero-text">
         <h1>Our Unique Vision</h1>
-        <p>At Mylar Grow, our vision is to lead the way in sustainable agriculture by promoting eco-friendly farming practices and innovative solutions. We strive to address food security challenges, supports farmers, and create a positive impact on the environment. Through Mylar Grow, we aim to revolutionize the agricultural industry with a focus on sustainability and efficiency.</p>
+        <p>At Mylar Grow, our vision is to lead the way in sustainable agriculture by promoting eco-friendly farming practices and innovative solutions. We strive to address food security challenges, support farmers, and create a positive impact on the environment. Through Mylar Grow, we aim to revolutionize the agricultural industry with a focus on sustainability and efficiency.</p>
     </div>
 </section>
 
-<body>
-    <div class="team-section">
-        <h1>Our Team</h1>
-        <p>Meet the dedicated individuals behind Mylar Grow who are committed to sustainable agriculture and revolutionizing the farming industry. With diverse expertise and a shared passion for eco-friendly solutions, our team drives the success of our innovative Two-Step Layered Farming system.</p>
-        
-        <div class="team-grid">
-            <div class="team-member">
-                <h2><span class="emoji">🤵</span>Harshith HS</h2>
-                <h3>Co-Founder</h3>
-                <p>Driven by innovation and a commitment to sustainability, our team at Mylar Grow is transforming the agriculture industry through eco-friendly solutions.</p>
-            </div>
-            <div class="team-member">
-                <h2><span class="emoji">🤵</span>Abhay Rejish Nair</h2>
-                <h3>Co-Founder</h3>
-                <p>With a shared passion for sustainable farming, our diverse team collaborates to bring cutting-edge solutions to the agricultural sector.</p>
-            </div>
-            <div class="team-member">
-                <h2><span class="emoji">👨‍💼</span>Isaac Anto Lawrence</h2>
-                <h3>Marketing Specialist</h3>
-                <p>At Mylar Grow, our team members bring a wealth of experience and dedication to revolutionize agricultural practices and promote sustainability.</p>
-            </div>
-            <div class="team-member">
-                <h2><span class="emoji">👨‍💻</span>Mayank Tandel</h2>
-                <h3>CISO</h3>
-                <p>Our team's collective expertise and commitment to sustainable farming drive the success and impact of Mylar Grow.</p>
-            </div>
+<div class="team-section">
+    <h1>Our Team</h1>
+    <p>Meet the dedicated individuals behind Mylar Grow who are committed to sustainable agriculture and revolutionizing the farming industry. With diverse expertise and a shared passion for eco-friendly solutions, our team drives the success of our innovative Two-Step Layered Farming system.</p>
+    
+    <div class="team-grid">
+        <div class="team-member">
+            <h2><span class="emoji">🤵</span>Harshith HS</h2>
+            <h3>Co-Founder</h3>
+            <p>Driven by innovation and a commitment to sustainability, our team at Mylar Grow is transforming the agriculture industry through eco-friendly solutions.</p>
+        </div>
+        <div class="team-member">
+            <h2><span class="emoji">🤵</span>Abhay Rejish Nair</h2>
+            <h3>Co-Founder</h3>
+            <p>With a shared passion for sustainable farming, our diverse team collaborates to bring cutting-edge solutions to the agricultural sector.</p>
+        </div>
+        <div class="team-member">
+            <h2><span class="emoji">👨‍💼</span>Isaac Anto Lawrence</h2>
+            <h3>Marketing Specialist</h3>
+            <p>At Mylar Grow, our team members bring a wealth of experience and dedication to revolutionize agricultural practices and promote sustainability.</p>
+        </div>
+        <div class="team-member">
+            <h2><span class="emoji">👨‍💻</span>Mayank Tandel</h2>
+            <h3>CISO</h3>
+            <p>Our team's collective expertise and commitment to sustainable farming drive the success and impact of Mylar Grow.</p>
         </div>
     </div>
-</body>
+</div>
 
 <footer>
     <p>&copy; 2025 Mylar Grow. All rights reserved.</p>
