@@ -3,9 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Learn More</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif, Arial;
+            margin: 0;
+            padding: 0;
+            background-color: #C1FAF4;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #C1FAF4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: #333;
+            margin: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .left-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffb3d9;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card h3 {
+            font-size: 1.6rem;
+            color: #a52121;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            margin: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .right-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .heading {
+            text-align: center;
+            background-color: #ffb3d9;
+            padding: 20px;
+            margin: 0 0 20px 0;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #a52121;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .right-section img {
+                margin: 0 auto;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>This Page is Under Development</h1>
+
+    <!-- Header -->
+<header>
+    <h1>Mylar Grow</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="experiences.html">Our Experiences</a>
+        <a href="resources.html">Resources</a>
+    </nav>
+</header>
+
+    <!-- Heading -->
+  
+
+    <div class="container">
+        <!-- Left section with cards -->
+        <div class="left-section">
+            <div id="discover" class="card">
+                <h3>Discover</h3>
+                <p>Discover the impact of Mylar Grow in the agriculture sector and its contributions to sustainability.</p>
+            </div>
+            <div id="learn" class="card">
+                <h3>Learn</h3>
+                <p>Learn how Mylar Grow is revolutionizing the agricultural industry with its eco-friendly and efficient practices.</p>
+            </div>
+            <div id="innovate" class="card">
+                <h3>Innovate</h3>
+                <p>Innovate with Mylar Grow and be part of the sustainable farming revolution.</p>
+            </div>
+        </div>
+
+        <!-- Right section with image -->
+        <div class="right-section">
+            <img src="mylar.png" alt="Farming System">
+        </div>
+    </div>
+
 </body>
 </html>
