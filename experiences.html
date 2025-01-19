@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0f9f9;
+            background-color: #C1FAF4;
             color: #333;
             margin: 0;
             padding: 20px;
@@ -37,6 +37,7 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: left;
+            transition: transform 0.3s;
         }
         .card h2 {
             font-size: 1.2rem;
@@ -51,14 +52,6 @@
         .card span {
             font-size: 1.2rem;
         }
-        .show-more {
-            font-size: 0.9rem;
-            color: #444;
-            margin-top: 10px;
-            display: inline-block;
-            text-decoration: underline;
-            cursor: pointer;
-        }
         .card:hover {
             transform: translateY(-10px);
         }
@@ -67,10 +60,9 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 40px;
-            background-color: #fff;
+            background-color: #C1FAF4;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
         header h1 {
             font-size: 1.8em;
             color: #333;
@@ -83,21 +75,24 @@
             color: #333;
             transition: color 0.3s;
         }
-
         nav a:hover {
             color: #4CAF50;
         }
-
-        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 10px;
+            }
+        }
     </style>
 </head>
-
-
 <body>
     <header>
         <h1>Mylar Grow</h1>
         <nav>
-    
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="experiences.html">Our Experiences</a>
@@ -107,31 +102,24 @@
     <div class="section">
         <h1>Success Stories</h1>
         <p>Read about how Mylar Grow has transformed agricultural practices and improved crop yields sustainably. Explore our case studies to witness the impact of our innovative farming techniques.</p>
-        
         <div class="card-grid">
             <div class="card">
                 <h2>World AI Summit Qatar 2024 <span>🚀</span></h2>
-                <p>Mylar Grow gained recognition as a leading-edge innovation in agriculture technology. It was showcased at the World AI Summit Qatar 2024, emphasizing its use of AI for sustainable growth. This platform provided international exposure, connecting Mylar Grow with global AI leaders, researchers, and investors.
-
-                </p>
+                <p>Mylar Grow gained recognition as a leading-edge innovation in agriculture technology. It was showcased at the World AI Summit Qatar 2024, emphasizing its use of AI for sustainable growth. This platform provided international exposure, connecting Mylar Grow with global AI leaders, researchers, and investors.</p>
             </div>
             <div class="card">
                 <h2>Qatar Scientific Club <span>🌱</span></h2>
                 <p>The project was shortlisted as one of the Top 10 projects by the Qatar Scientific Club, a testament to its ingenuity and potential impact on the agriculture and tech sectors. This acknowledgment highlighted its innovative approach and technical excellence.</p>
-                
             </div>
             <div class="card">
                 <h2>Hackathon by Qatar Development Bank (QDB) <span>🏦</span></h2>
                 <p>Mylar Grow excelled in a hackathon organized by QDB, showcasing its potential to address critical challenges in agriculture using AI. The event provided mentorship, networking, and validation of its business and technical models, accelerating its development and recognition.</p>
-              
             </div>
             <div class="card">
                 <h2>Participants in Lifelines Hackathon Qatar 2025 <span>🌍</span></h2>
                 <p>Mylar Grow participated in the prestigious Lifelines Hackathon Qatar 2025, organized by leading universities. This hackathon focused on leveraging technology to address critical sustainability challenges. Mylar Grow's involvement underscored its commitment to innovation and collaboration within the academic and scientific community.</p>
-                
             </div>
         </div>
     </div>
-    
 </body>
 </html>
