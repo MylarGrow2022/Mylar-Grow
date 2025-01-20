@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mylar Grow</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #C1FAF4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #C1FAF4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8em;
+            color: #333;
+            margin: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px;
+            height: auto;
+            box-sizing: border-box;
+            background-color: #C1FAF4;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 5%;
+        }
+
+        .hero .hero-text {
+            max-width: 50%;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #555;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .hero img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card h3 {
+            margin: 15px;
+            font-size: 1.5em;
+            color: #4CAF50;
+        }
+
+        .card p {
+            margin: 0 15px 15px;
+            font-size: 1em;
+            line-height: 1.5;
+            color: #666;
+        }
+        table, th, td {
+  border:2px solid black;
+  background-color: #f9aab8;
+}
+
+        @media (max-width: 1200px) {
+            .hero .hero-text {
+                max-width: 60%;
+            }
+
+            .hero img {
+                max-width: 35%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 10px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero .hero-text {
+                max-width: 100%;
+            }
+
+            .hero img {
+                max-width: 70%;
+            }
+
+            .content .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .content .card {
+                width: 100%;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Mylar Grow</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="experiences.html">Our Experiences</a>
+        <a href="resources.html">Resources</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Learn about Mylar-Grow</h1>
+        <p>The Mylar-Grow is a dual-layer farming system that uses Mylar foil for  
+            efficient sunlight reflection and a solar tracking mechanism to optimize 
+            light distribution across both crops layers. Doubling the yield on the 
+            same land area while integrating renewable energy for sustainability.</p>
+    </div>
+    <img src="pic.png" alt="Farming System">
+</section>
+<table style="width:100%">
+    <tr>
+      <th>The Problem</th>
+      <th>The Solution</th>
+ 
+    </tr>
+    <tr>
+      <td>The Mylar-Grow addresses critical challenges in global agriculture, including the scarcity of arable land, increasing food demand due to population growth. With limited farmland and urbanization reducing available agricultural areas, farmers struggle to increase crop yields without harming natural ecosystems. Existing vertical farming systems rely on energy-intensive artificial lighting, raising costs and carbon emissions.</td>
+      <td>Mylar-Grow was developed to provide a sustainable solution for increasing agricultural productivity without expanding land use. By utilizing a dual-layer farming system with Mylar foil for efficient sunlight redistribution and integrating renewable energy sources, the invention ensures resource conservation, cost-effectiveness, and environmental sustainability. It directly addresses the global need for higher food production while minimizing the ecological footprint of farming practices.</td>
+
+    </tr>
+  </table>
+
+  <section class="hero">
+    <div class="hero-text">
+        <h1>Mylar-Grow</h1>
+        <h2>The Product</h2>
+        <p>Mylar-Grow is a <b>dual-layer farming system</b> designed to maximize agricultural yield, optimize resource utilization, and promote sustainability. The system features two layers of crops grown on the same plot of land, supported by an <b>innovative sunlight management mechanism</b>. Mylar foil, known for its <b>high reflectivity (98%)</b>, is used to <b>redirect and distribute sunlight effectively</b>. A solar tracking mechanism continuously adjusts the position of the reflective surfaces to follow the sun's movement, ensuring <b>consistent and optimal light exposure</b> for both crop layers throughout the day.
+            The system is powered by <b>renewable energy sources</b>, such as <b>solar panels or wind turbines</b>, to operate the solar tracking and any auxiliary components, significantly <b>reducing energy consumption and operational costs</b>. It incorporates <b>advanced irrigation techniques</b>, like drip irrigation, to minimize water wastage, further enhancing efficiency.
+            This modular design is <b>adaptable to various crops and land sizes</b>, making it suitable for a wide range of agricultural applications. By <b>doubling crop productivity</b> on existing farmland, the invention addresses the global challenges of land scarcity, food security, and environmental sustainability. It reduces the dependency on <b>artificial lighting</b> and mitigates the need for <b>deforestation or land conversion</b>, promoting biodiversity conservation and reducing the <b>carbon footprint</b> of farming practices.
+            </p>
+        
+    </div>
+    <img src="Fantastic Sango.png" alt="Farming System">
+</section>
+<section class="hero">
+    <img src="mylarnew.png" alt="Farming System">
+    <div class="hero-text">
+        <h2>Arrangement of Mylar-Grow</h2>
+        <p>The Mylar-Grow features a <b>two-tier farming system</b>, with crops cultivated on both the ground floor and the first floor, arranged parallel to each other like a traditional building structure. This innovative setup <b>optimizes land use</b> and ensures <b>efficient sunlight distribution</b>.</p>
+
+<p>On the ground floor, <b>two Mylar foil panels</b> are strategically positioned to reflect sunlight upward. These foils are securely affixed to <b>Aluminum Composite Panels (ACP)</b> using <b>high-strength adhesive</b> or <b>industrial-grade double-sided tape</b>, ensuring durability and reliability.</p>
+
+<p>The panels are designed to <b>tilt dynamically based on the sun’s position</b> throughout the day, using <b>motors mounted at their base</b>. This adaptive movement ensures maximum light capture and reflection.</p>
+
+<p>Beneath the first floor, <b>additional Mylar panels</b> are arranged in a <b>"V" shape</b>, directing the reflected sunlight evenly onto the crops below. This precise arrangement ensures that <b>both levels receive adequate sunlight</b>, promoting healthy plant growth and maximizing productivity.</p>
+
+<p>This thoughtfully engineered design not only <b>optimizes natural light utilization</b> but also embodies <b>sustainability</b> and <b>innovation</b> in modern farming.</p>
+
+    </div>
+</section>
+<section class="hero">
+    <div class="hero-text">
+        <h2>Working of Mylar-Grow</h2>
+        <p>The <b>Mylar-Grow</b> is the solution for <b>doubling the yield</b> from an <b>area-constrained land</b>. Mylar-Grow consists of <b>two floors</b> where plants will be grown on both floors. </p>
+
+<p>On the <b>first floor (top floor)</b>, plants will be grown using <b>traditional farming methods</b> and will receive sunlight in the normal way. On the <b>ground floor (bottom floor)</b>, plants will be grown by the <b>reflected sunlight</b> from the <b>reflective surface (Mylar foils)</b>.</p>
+
+<p>The reflective surface will be placed in the <b>east-west direction</b> because of the sun’s motion around the Earth, and the reflective surface will <b>change its angle</b> according to the movement of the sun for the <b>maximum utilization of sunlight</b> for the plants.</p>
+
+<p>The <b>sun-rays</b> from the sun will hit the <b>Mylar foils</b>, which are placed on the edge of the vertical farm, and will be reflected to the <b>“V”-shaped reflective surface</b> (Mylar foil) placed beneath the top floor. The sun-rays will then be <b>finally reflected</b> to the plants on the ground floor.</p>
+
+        
+    </div>
+    <img src="bottommylar.png" alt="Farming System">
+</section>
+
+
+
+
+
+<footer>
+    <p>&copy; 2025 Mylar Grow. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
